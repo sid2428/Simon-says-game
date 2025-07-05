@@ -1,0 +1,56 @@
+body{
+   text-align: center;
+   background-color: #EFD0CA;
+   color: #660000;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.button{
+    height: 150px;
+    width: 150px;
+    border: solid #42033D; 
+    color: black;
+    display: flex;               /* Enable flexbox */
+    align-items: center;         /* Vertically center */
+    justify-content: center;     /* Horizontally center */
+    font-size: 2.2rem; 
+    
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    background-color: #EE4266;
+    border-radius: 100% 0px 0px 0px;
+}
+
+.blue{
+    background-color: rgb(23, 190, 187);
+    border-radius: 0px 100% 0px 0px;
+}
+
+.voilet{
+    background-color: #7180AC;
+    border-radius: 0px 0px 0px 100%;
+}
+
+.yellow{
+    background-color: rgb(237, 184, 139);
+    border-radius: 0px 0px 100% 0px;
+}
+
+.gameover {
+    animation: fadeRed 3s forwards;
+}
+
+@keyframes fadeRed {
+    0% {
+        background-color: #F0544F;
+    }
+    100% {
+        background-color: #EFD0CA; /* original body bg */
+    }
+}
